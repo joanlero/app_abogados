@@ -1,3 +1,5 @@
+import 'package:app_abogados/src/features/autentication/screens/welcome/welcome_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../constants/bindings.dart';
@@ -11,6 +13,11 @@ class AppPages {
         name: AppRoutes.INITIAL,
         page: ()=> SplashScreen(),
         binding: PageBinding(),
+    ),
+    GetPage(
+        name: AppRoutes.WELCOME,
+        page: ()=> WelcomeScreen(),
+        binding: PageBinding()
     ),
     GetPage(
       name: AppRoutes.LOGIN,
