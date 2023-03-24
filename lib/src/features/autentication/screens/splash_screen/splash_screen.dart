@@ -5,14 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-
 class SplashScreen extends GetView<SplashController> {
-
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(
       init: SplashController(),
-      builder: (_){
+      builder: (_) {
         return Scaffold(
             backgroundColor: Colors.white,
             body: SizedBox(
@@ -20,7 +18,11 @@ class SplashScreen extends GetView<SplashController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image(image: AssetImage(splashWelcome), width: 50,height: 50,),
+                  Image(
+                    image: AssetImage(splashWelcome),
+                    width: 50,
+                    height: 50,
+                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -30,8 +32,7 @@ class SplashScreen extends GetView<SplashController> {
                   )
                 ],
               ),
-            )
-        );
+            ));
       },
     );
   }

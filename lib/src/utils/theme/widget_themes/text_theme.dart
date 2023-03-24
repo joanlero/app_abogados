@@ -8,7 +8,7 @@ class TTexttheme{
       ),
       titleSmall: GoogleFonts.poppins(
           color: Colors.black54,
-          fontSize: 24
+          fontSize: 17
       )
   );
 
@@ -18,7 +18,7 @@ class TTexttheme{
       ),
       titleSmall: GoogleFonts.poppins(
           color: Colors.white60,
-          fontSize: 24
+          fontSize: 17
       )
   );
 }
