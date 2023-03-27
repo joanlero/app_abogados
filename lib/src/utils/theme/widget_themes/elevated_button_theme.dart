@@ -7,8 +7,9 @@ class TElevatedButtonTheme{
 
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
+        shadowColor: Colors.black12,
         backgroundColor: splashColor,
-        elevation: 0,
+        elevation: 20,
         shape: RoundedRectangleBorder(),
         foregroundColor: Colors.white,
         side: BorderSide(color: Colors.black12),
@@ -19,7 +20,7 @@ class TElevatedButtonTheme{
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
         backgroundColor: splashColor,
-        elevation: 0,
+        elevation: 20,
         shape: RoundedRectangleBorder(),
         foregroundColor: Colors.white,
         side: BorderSide(color: Colors.white),

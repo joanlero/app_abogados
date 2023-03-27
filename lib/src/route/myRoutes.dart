@@ -1,9 +1,9 @@
+import 'package:app_abogados/src/features/autentication/screens/login/login_screen.dart';
 import 'package:app_abogados/src/features/autentication/screens/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../constants/bindings.dart';
-import '../features/autentication/screens/login.dart';
 import '../features/autentication/screens/splash_screen/splash_screen.dart';
 import 'app_routes.dart';
 
@@ -21,7 +21,7 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.LOGIN,
-      page: () => LoginPage(),
+      page: () => LoginScreen(),
       binding: PageBinding(),
     ),
   ];

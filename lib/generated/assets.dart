@@ -2,12 +2,33 @@
 class Assets {
   Assets._();
 
+  static const String assetsLogoGoogleLogo = 'assets/logo/google-logo.png';
+  static const String constantsBindings = 'lib/src/constants/bindings.dart';
+  static const String constantsColor = 'lib/src/constants/color.dart';
+  static const String constantsImage = 'lib/src/constants/image.dart';
+  static const String constantsSizes = 'lib/src/constants/sizes.dart';
+  static const String constantsTextStrings = 'lib/src/constants/text_strings.dart';
+  static const String controllersRoutesController = 'lib/src/features/autentication/controllers/routesController.dart';
+  static const String controllersSplashController = 'lib/src/features/autentication/controllers/splashController.dart';
+  static const String controllersWelcomeController = 'lib/src/features/autentication/controllers/welcomeController.dart';
+  static const String generatedAssets = 'lib/generated/assets.dart';
   static const String imagesSplashLogoSplash = 'assets/images/splash/logoSplash.png';
   static const String imagesWelcomeWelcome = 'assets/images/welcome/welcome.png';
+  static const String libMain = 'lib/main.dart';
+  static const String loginLoginScreen = 'lib/src/features/autentication/screens/login/login_screen.dart';
+  static const String logoGoogleLogo = 'assets/logo/google-logo.png';
+  static const String routeAppRoutes = 'lib/src/route/app_routes.dart';
+  static const String routeMyRoutes = 'lib/src/route/myRoutes.dart';
+  static const String screensLogin = 'lib/src/features/autentication/screens/login.dart';
   static const String splashLogoSplash = 'assets/images/splash/logoSplash.png';
+  static const String splashScreenSplashScreen = 'lib/src/features/autentication/screens/splash_screen/splash_screen.dart';
   static const String splashSplashTopIcon = 'assets/images/splash/splash-top-icon.png';
+  static const String themeTheme = 'lib/src/utils/theme/theme.dart';
   static const String videosLogo = 'assets/videos/logo.mp4';
   static const String videosNikeAnimation1 = 'assets/videos/nike_animation1.mp4';
   static const String welcomeWelcome = 'assets/images/welcome/welcome.png';
+  static const String welcomeWelcomeScreen = 'lib/src/features/autentication/screens/welcome/welcome_screen.dart';
+  static const String widgetThemesElevatedButtonTheme = 'lib/src/utils/theme/widget_themes/elevated_button_theme.dart';
+  static const String widgetThemesTextTheme = 'lib/src/utils/theme/widget_themes/text_theme.dart';
 
 }
