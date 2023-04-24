@@ -1,7 +1,9 @@
 import 'package:app_abogados/src/constants/color.dart';
 import 'package:app_abogados/src/constants/sizes.dart';
 import 'package:app_abogados/src/constants/text_strings.dart';
+import 'package:app_abogados/src/features/autentication/screens/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginFooterWidget extends StatelessWidget {
   const LoginFooterWidget({
@@ -12,18 +14,6 @@ class LoginFooterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Align(
-          alignment: Alignment.centerRight,
-          child: TextButton(
-            onPressed: () {},
-            child: Text(
-              olvidoContrasena,
-              style: TextStyle(
-                  color: splashColor, fontWeight: FontWeight.bold, fontSize: 16),
-            ),
-          ),
-        ),
-        SizedBox(height: 50,),
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
@@ -57,11 +47,8 @@ class LoginFooterWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(noRegistrado, style: TextStyle(color: splashColor, fontSize: 16),),
-                SizedBox(width: 7,),
-                GestureDetector(
-                    onTap: (){},
-                    child:Text(registerTextButton, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.amber, fontSize: 16),)
-                ),
+                TextButton(
+                    onPressed: () => Get.to(SignUpScreen(), transition: Transition.leftToRight, duration: Duration(milliseconds: 700)), child: Text(registerTextButton, style: TextStyle(fontWeight: FontWeight.bold, color: textColor, fontSize: 16),),)
               ],
             )
         )

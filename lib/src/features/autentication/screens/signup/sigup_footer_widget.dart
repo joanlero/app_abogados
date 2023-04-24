@@ -1,6 +1,8 @@
 import 'package:app_abogados/src/constants/color.dart';
 import 'package:app_abogados/src/constants/text_strings.dart';
+import 'package:app_abogados/src/features/autentication/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SignUpFotterWidget extends StatelessWidget {
   const SignUpFotterWidget({Key? key}) : super(key: key);
@@ -9,7 +11,7 @@ class SignUpFotterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 50,),
+        SizedBox(height: 10,),
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
@@ -34,6 +36,17 @@ class SignUpFotterWidget extends StatelessWidget {
               onPressed: () {},
               label: Text(loginGoogle)),
         ),
+        Align(
+            alignment: Alignment.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(yaRegistrado, style: TextStyle(color: splashColor, fontSize: 16),),
+                TextButton(
+                  onPressed: () => Get.to(LoginScreen(), transition: Transition.leftToRight, duration: Duration(milliseconds: 700)), child: Text(loginTextButton, style: TextStyle(fontWeight: FontWeight.bold, color: textColor, fontSize: 16),),)
+              ],
+            )
+        )
       ],
     );
   }

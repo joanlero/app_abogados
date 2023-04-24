@@ -12,7 +12,7 @@ class SplashController extends GetxController {
     super.onReady();
 
     Future.delayed(Duration(seconds: 5),(){
-      Get.to(SignUpScreen(), transition: Transition.rightToLeft);
+      Get.to(WelcomeScreen(), transition: Transition.rightToLeft);
     });
   }
 

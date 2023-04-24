@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 Widget signupForm() {
-  return Form(
-      child: Container(
-        padding: EdgeInsets.symmetric(vertical: formHeight + 20),
-        child: SingleChildScrollView(
+  return SingleChildScrollView(
+    child: Form(
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: formHeight + 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -106,6 +106,6 @@ Widget signupForm() {
               SignUpFotterWidget()
             ],
           ),
-        ),
-      ));
+        )),
+  );
 }

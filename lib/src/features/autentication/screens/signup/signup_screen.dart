@@ -13,16 +13,16 @@ class SignUpScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Container(
-            padding: EdgeInsets.all(tDefaultSize),
+              padding: EdgeInsets.all(tDefaultSize),
             child: Column(
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 15),
                   width: double.infinity,
                   //color: Colors.red,
                   child: Image.asset(
                     welcomeImage,
-                    height: 100,
+                    height: 70,
                   ),
                 ),
                 signupForm()
